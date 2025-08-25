@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decimal to Binary Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <h1>
+      <span id="converter-title">Decimal to Binary</span> <br />
+      Converter
+    </h1>
+    <section class="input-container">
+      <label for="number-input" id="input-label">Enter a decimal number:</label>
+      <input
+        value=""
+        type="number"
+        name="number input"
+        id="number-input"
+        class="number-input"
+      />
+      <button class="convert-btn" id="convert-btn">Convert</button>
+      <button id="switch-btn"><span data-feather="repeat"></span></button>
+    </section>
+    <section class="output-container">
+      <output id="result" for="number-input"></output>
+      <h2>Convert History</h2>
+      <ul id="history-container"></ul>
+    </section>
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
